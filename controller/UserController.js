@@ -1,7 +1,8 @@
 const userModel = require('../models/userSchema')
 const mongoose = require('mongoose');
 const characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs');
+
 // const jwt = require("jsonwebtoken");
 
 module.exports.get_all_user = async(req,res) =>{
